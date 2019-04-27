@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function Car(make, model, year, color) {
+                this.make = make;
+                this.model = model;
+                this.year = year;
+                this.color = color;
+            }
+
+            var nissan = new Car("Nissan", "Muran", 2017, "purple");
+            nissan.engine = "V6";//new property added inline
+
+            var lexus = new Car("Lexus", "GS3000", 2009, "white");
+            lexus.engine = "V4";///new property added inline
+
+            var honda = new Car("Honda", "Accord", 2018, "blue");
+            honda.engine = "V6";///delete property inline
+            delete honda.year;
+
+            console.log(nissan.make, nissan.model, nissan.year, nissan.color, nissan.engine);
+
+            console.log(lexus.make, lexus.model, lexus.year, lexus.color, lexus.engine);
+
+            console.log(honda.make, honda.model, honda.year, honda.color, honda.engine);
+
+
+        
+
+
+    </script>
+</body>
+</html>
